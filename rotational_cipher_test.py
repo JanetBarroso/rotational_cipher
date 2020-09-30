@@ -25,8 +25,8 @@ def test_rotate_n_by_13_with_wrap_around_alphabet():
     assert rotate("n", 13) == "a"
 
 
-def test_rotate_spaces():
-    assert rotate("bla h", 3) == "eod k"
+def test_rotate_for_spaces_and_specialCharacters():
+    assert rotate("bla! h", 3) == "eod! k"
 
 def test_rotate_capital_letters():
     assert rotate("OMG", 5) == "TRL"

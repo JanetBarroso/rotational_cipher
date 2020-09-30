@@ -8,11 +8,14 @@ def rotate(text, key):
                 "u", "v", "w", "x", "y",
                 "z"]
     for letter in text:
-        if alphabet.index(letter) + key >= 26:
-            key = (alphabet.index(letter) + key) % 26
-            new_text.append(alphabet[key])
+        if letter in alphabet:
+            if alphabet.index(letter) + key >= 26:
+                key = (alphabet.index(letter) + key) % 26
+                new_text.append(alphabet[key])
+            else:
+                new_text.append(alphabet[alphabet.index(letter) + key])
         else:
-            new_text.append(alphabet[alphabet.index(letter) + key])
+            new_text.append(letter)
 
     new_text = ''.join(new_text)
     return new_text

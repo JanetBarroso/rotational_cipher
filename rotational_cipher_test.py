@@ -31,7 +31,7 @@ def test_rotate_for_spaces_and_specialCharacters():
 def test_rotate_capital_letters():
     assert rotate("OMG", 5) == "TRL"
 
-"""
+
 def test_rotate_spaces():
     assert rotate("O M G", 5) == "T R L"
 
@@ -47,4 +47,3 @@ def test_rotate_punctuation():
 def test_rotate_all_letters():
     assert rotate("The quick brown fox jumps over the lazy dog", 13) == \
            "Gur dhvpx oebja sbk whzcf bire gur ynml qbt"
-"""
